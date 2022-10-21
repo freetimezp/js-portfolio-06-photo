@@ -402,6 +402,7 @@ header {
 }
 
 .about__right .empty span {
+  opacity: 0;
   line-height: 3.5rem;
   transition: var(--transition);
 }
@@ -414,17 +415,130 @@ header {
 .about__right:hover .empty span {
   color: var(--color-primary);
   padding-left: 1rem;
+  opacity: 1;
 }
 
+/* =============== GALLERY ============== */
+#gallery {
+  margin-top: 12rem;
+}
 
+.gallery__head {
+  display: flex;
+  justify-content: space-between;
+}
 
+.gallery__container p {
+  width: 45rem;
+}
 
+.gallery .swiper-wrapper {
+  margin-top: 5rem;
+  height: 37rem;
+  padding-bottom: 5rem;
+}
 
+.gallery .swiper-pagination-bullet {
+  padding: 8px;
+}
 
+#gallery .swiper-pagination-bullet-active {
+  background: var(--color-primary);
+}
 
+.gallery .swiper-slide {
+  border: 0.5rem solid var(--color-bg-4);
+  height: fit-content;
+  max-height: 36rem;
+  overflow: hidden;
+  transition: var(--transition);
+}
 
+.gallery .swiper-slide img {
+  filter: saturate(0);
+  transition: var(--transition);
+}
 
+.gallery .swiper-slide:hover {
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
+}
 
+.gallery .swiper-slide:hover img {
+  filter: saturate(1);
+  transform: scale(1.1);
+}
+
+/* =============== WORKS ============== */
+
+.works {
+  margin: 5rem 0;
+}
+
+.works-wrapper-1,
+.works-wrapper-2 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 7rem;
+}
+
+.works-wrapper-2 {
+  margin-top: 10rem;
+}
+
+.works__title {
+  margin: 5rem 0;
+}
+
+.works .swiper-wrapper-1,
+.works .swiper-wrapper-2 {
+  margin-top: 5rem;
+}
+
+.works .block-1,
+.works .block-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.works .work__text {
+  padding: 5rem 0;
+  max-width: 450px;
+}
+
+.works .block-1 {
+  max-width: 600px;
+}
+
+.works hr {
+  height: 1px;
+  width: 100%;
+  background: var(--color-primary-variant);
+}
+
+.works .block-2 {
+  max-width: 400px;
+}
+
+.works .block-1 .swiper-wrapper {
+  max-width: 600px;
+}
+
+.works .block-2 .swiper-wrapper {
+  max-width: 400px;
+}
+
+.works .works-wrapper-1 .work__text {
+  margin-left: 18rem;
+  margin-right: -5rem;
+}
+
+.works .works-wrapper-2 .work__text {
+  margin-right: 14rem;
+}
+
+.works .block-2 img {
+  border-radius: 1rem;
+}
 
 
 

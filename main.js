@@ -13,3 +13,42 @@ textButtons.forEach((textButton) => {
   `).join('');
 });
 
+//swiper slider
+let swiperGallery = new Swiper(".mySwiper-gallery", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    599: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1023: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    }
+  }
+});
+
+var swiperWorks = new Swiper(".mySwiper-works-1", {
+  effect: "cube",
+  loop: true,
+  grabCursor: true,
+  cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 20,
+    shadowScale: 0.94,
+  },
+});
+
+var swiperWorksCard = new Swiper(".mySwiper-works-2", {
+  effect: "cards",
+  loop: true,
+  grabCursor: true,
+});

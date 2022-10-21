@@ -12,6 +12,9 @@
     <!--========== ICONSCOUT CSS ==========-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
+    <!--========== SWIPER CSS ==========-->
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+
     <!--========== MAIN CSS ==========-->
     <link rel="stylesheet" href="./style.css">
 
@@ -27,6 +30,7 @@
           <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#works">Works</a></li>
           <li><a href="#exhibitions">Exhibitions</a></li>
         </ul>
 
@@ -85,6 +89,7 @@
       </div>
     </div>
   </header>
+
   <div class="header__frames">
     <div class="header__frame">
       <img src="./images/frame1.jpg" alt="frame">
@@ -137,8 +142,142 @@
     </div>
   </section>
   <!--========== END ABOUT ==========-->
+  <!--========== GALLERY ==========-->
+  <section class="gallery" id="gallery">
+    <div class="container gallery__container swiper mySwiper-gallery">  
+      <div class="gallery__head">
+        <h2 class="gallery__title">My Gallery</h2>
+        <div class="empty gallery__empty"></div>
+      </div>
+      <p>
+        Most brands have a strong connection between their product and their name. 
+        For example, Canon means a rule, law or principle. Ilford takes its name 
+        from its birthplace, and Olympus is the home of the Greek Gods.
+        But, Kodak has no real meaning.
+      </p>
 
+      <div class="swiper-wrapper">
+        <srticle class="swiper-slide">
+          <img src="./images/gallery1.jpg" alt="gallery">
+        </srticle>
+        <srticle class="swiper-slide">
+          <img src="./images/gallery2.jpg" alt="gallery">
+        </srticle>
+        <srticle class="swiper-slide">
+          <img src="./images/gallery3.jpg" alt="gallery">
+        </srticle>
+        <srticle class="swiper-slide">
+          <img src="./images/gallery4.jpg" alt="gallery">
+        </srticle>
+        <srticle class="swiper-slide">
+          <img src="./images/gallery5.jpg" alt="gallery">
+        </srticle>
+        <srticle class="swiper-slide">
+          <img src="./images/gallery6.jpg" alt="gallery">
+        </srticle>
+        <srticle class="swiper-slide">
+          <img src="./images/gallery7.jpg" alt="gallery">
+        </srticle>
+        <srticle class="swiper-slide">
+          <img src="./images/gallery8.jpg" alt="gallery">
+        </srticle>
+        <srticle class="swiper-slide">
+          <img src="./images/gallery9.jpg" alt="gallery">
+        </srticle>
+        <srticle class="swiper-slide">
+          <img src="./images/gallery10.jpg" alt="gallery">
+        </srticle>
+        <srticle class="swiper-slide">
+          <img src="./images/gallery11.jpg" alt="gallery">
+        </srticle>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>  
+  <!--========== END GALLERY ==========-->
 
+  <!--========== MY WORKS ==========-->
+  <section class="works" id="works">
+    <div class="container">
+      <div class="works__head">
+        <h2 class="works__title">My Works</h2>
+      </div>
+
+      <div class="works-wrapper-1">
+        <p class="work__text">
+          You might think that funny cat photos are a trend that began a few years ago. <br><br>
+          It is still one of the most popular searches in Google. 
+          But, cat photography has origins in the 19th century. <br><br>
+          This viral trend was born in the 1870s when Harry Pointer took a photo of 
+          his cat and started it all. Someone please thank that man!
+        </p>
+        <div class="work-block block-1 swiper mySwiper-works-1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/cats/cats-1.jpg" alt="work cat">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/cats/cats-2.jpg" alt="work cat">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/cats/cats-3.jpg" alt="work cat">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/cats/cats-4.jpg" alt="work cat">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/cats/cats-5.jpg" alt="work cat">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/cats/cats-6.jpg" alt="work cat">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="">
+
+      <div class="works-wrapper-2">
+        <div class="work-block block-2 swiper mySwiper-works-2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/photo/photo-1.jpg" alt="work photo">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/photo/photo-2.jpg" alt="work photo">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/photo/photo-3.jpg" alt="work photo">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/photo/photo-4.jpg" alt="work photo">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/photo/photo-5.jpg" alt="work photo">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/photo/photo-6.jpg" alt="work photo">
+            </div>
+          </div>
+        </div>
+        <p class="work__text">
+          Not only was it taken almost 200 years ago, but it took 8 hours to capture! 
+          The photo was taken by Joseph Niepce and named 'view from the window'. <br> <br>  
+          The scene took place in Saint-Loup-de-Varennes, France. The photo shows 
+          the surrounding castle and other buildings. <br> <br>  
+          A projected image from the window hit a sensitized plate, which was then 
+          used to place the image on paper. A lot of work went into this photo, and 
+          we are lucky it survived.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--========== END MY WORKS ==========-->
+
+  <!--========== SWIPER SCRIPT==========-->
+  <script src="./swiper-bundle.min.js"></script>
+  
+  <!--========== MAIN SCRIPT ==========-->
   <script src="./main.js"></script>
 </body>
 </html>
